@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI, Checked</title>
+  <meta name="description" content="A plain-language, sourced guide to what AI is, where it helps, where it goes wrong and what may come next, with facts, interpretation and predictions kept apart.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="wrap masthead">
+    <h1>AI, Checked</h1>
+    <p class="lede">A beginners guide to what AI is, its benefits, where it goes wrong, and what the future holds!</p>
+    <ul class="legend" aria-label="Label key">
+      <li><span class="label fact">Fact</span> Checked against a verified source.</li>
+      <li><span class="label interp">Interpretation</span> Neutral interpretation on the facts.</li>
+      <li><span class="label pred">Prediction</span> Possible, but not certain.</li>
+    </ul>
+  </header>
+
+  <nav class="timeline" aria-label="Steps">
+    <div class="wrap">
+      <ol>
+        <li><a href="#what" aria-label="Step 1: What AI is"><span class="n">1</span><span class="nm">What AI is</span></a></li>
+        <li><a href="#benefits" aria-label="Step 2: Benefits"><span class="n">2</span><span class="nm">Benefits</span></a></li>
+        <li><a href="#challenges" aria-label="Step 3: Challenges"><span class="n">3</span><span class="nm">Challenges</span></a></li>
+        <li><a href="#future" aria-label="Step 4: The future"><span class="n">4</span><span class="nm">The future</span></a></li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main" class="wrap">
+
+    <section id="what" aria-labelledby="what-h">
+      <p class="kicker">Step 1</p>
+      <h2 id="what-h">What AI is</h2>
+
+      <div class="claim fact">
+        <p class="label fact">Fact</p>
+        <p>AI is software that finds patterns in data and uses them to make predictions, recommendations or decisions. They are designed to perform tasks that normally require human intelligence, such as learning, reasoning, and problem-solving. For example, machine learning finds patterns in examples instead.<sup><a href="#s1" aria-label="Source 1">[1]</a></sup> Chatbots(Large Language Models) learn from huge amounts of web text.<sup><a href="#s2" aria-label="Source 2">[2]</a></sup></p>
+      </div>
+
+      <div class="demo" id="demo" hidden>
+        <h3>Try it: train a tiny model</h3>
+        <p class="hint">Tick the spam. The model counts words, then guesses. Six examples are easily fooled.</p>
+        <fieldset class="mails">
+          <legend class="sr">Tick the emails that are spam</legend>
+          <ul id="mails"></ul>
+        </fieldset>
+        <div id="results" aria-live="polite">
+          <p class="learned" id="learned"></p>
+          <ul class="guesses" id="guesses"></ul>
+        </div>
+      </div>
+
+      <div class="claim interp">
+        <p class="label interp">Interpretation</p>
+        <p>A chatbot is a really good guesser, not a fact-checker. It writes what is likely, so it can sound sure and still be wrong :(</p>
+      </div>
+
+      <a class="next" href="#benefits">Next: Benefits</a>
+    </section>
+
+    <section id="benefits" aria-labelledby="benefits-h">
+      <p class="kicker">Step 2</p>
+      <h2 id="benefits-h">Benefits</h2>
+
+      <div class="claim fact">
+        <p class="label fact">Fact</p>
+        <ul>
+          <li><strong>Health.</strong> The 2024 Nobel Prize in Chemistry honoured AlphaFold, an AI that predicts the shapes of proteins.<sup><a href="#s3" aria-label="Source 3">[3]</a></sup> In a Swedish trial of about 80,000 women, AI-assisted breast screening cut doctors' reading workload by 44.3%, with no drop in cancers found.<sup><a href="#s4" aria-label="Source 4">[4]</a></sup></li>
+          <li><strong>Weather.</strong> Europe's weather centre has run an AI forecasting system since February 2025, which it says beats its traditional model on many measures and uses about 1,000 times less energy.<sup><a href="#s5" aria-label="Source 5">[5]</a></sup></li>
+          <li><strong>Work.</strong> Among 5,179 customer-support agents, an AI assistant raised issues solved per hour by 14%, and by 34% for novices, with little effect on experts.<sup><a href="#s6" aria-label="Source 6">[6]</a></sup></li>
+          <li><strong>Learning.</strong> In a Harvard physics trial, students with an AI tutor learned more in less time than in an active-learning class. The authors say this may not hold everywhere.<sup><a href="#s7" aria-label="Source 7">[7]</a></sup></li>
+        </ul>
+      </div>
+
+      <div class="claim interp">
+        <p class="label interp">Interpretation</p>
+        <p>In each case, AI assists, while people make decisions. Important: diffrentiate between using and depending on AI.</p>
+      </div>
+
+      <div class="claim pred">
+        <p class="label pred">Prediction</p>
+        <p>More tools will follow this pattern, each reviewed by a person.</p>
+      </div>
+
+      <a class="next" href="#challenges">Next: Challenges</a>
+    </section>
+
+    <section id="challenges" aria-labelledby="challenges-h">
+      <p class="kicker">Step 3</p>
+      <h2 id="challenges-h">Challenges</h2>
+
+      <div class="claim fact">
+        <p class="label fact">Fact</p>
+        <ul>
+          <li><strong>Wrong answers.</strong> In 2023 a US court fined a law firm $5,000 for filing court cases that ChatGPT had invented.<sup><a href="#s8" aria-label="Source 8">[8]</a></sup></li>
+          <li><strong>Unfair results.</strong> In a 2018 study, three commercial face-analysis systems misjudged gender up to 34.7% of the time for darker-skinned women, against at most 0.8% for lighter-skinned men.<sup><a href="#s9" aria-label="Source 9">[9]</a></sup> Amazon scrapped a recruiting tool that favoured men.<sup><a href="#s10" aria-label="Source 10">[10]</a></sup></li>
+          <li><strong>Fraud.</strong> In early 2024 a Hong Kong employee transferred US$25.6 million after a video call in which everyone else was a deepfake.<sup><a href="#s11" aria-label="Source 11">[11]</a></sup></li>
+          <li><strong>Control.</strong> In July 2026 an AI agent in an OpenAI test escaped its environment and entered Hugging Face's systems. Hugging Face reports five customer datasets accessed.<sup><a href="#s12" aria-label="Source 12">[12]</a></sup><sup><a href="#s13" aria-label="Source 13">[13]</a></sup></li>
+          <li><strong>Responses.</strong> The EU AI Act requires high-risk systems to let people understand, override and halt them;<sup><a href="#s14" aria-label="Source 14">[14]</a></sup> NIST offers a voluntary risk framework.<sup><a href="#s15" aria-label="Source 15">[15]</a></sup></li>
+        </ul>
+      </div>
+
+      <div class="claim interp">
+        <p class="label interp">Interpretation</p>
+        <p> Problems appear when outputs go unchecked or could not easily be stopped. Defences: check, test, keep people accountable.</p>
+      </div>
+
+      <a class="next" href="#future">Next: The future</a>
+    </section>
+
+    <section id="future" aria-labelledby="future-h">
+      <p class="kicker">Step 4</p>
+      <h2 id="future-h">The future</h2>
+
+      <div class="claim fact">
+        <p class="label fact">Fact</p>
+        <ul>
+          <li><strong>Power.</strong> The International Energy Agency expects data-centre electricity use to more than double by 2030, with AI the main driver.<sup><a href="#s16" aria-label="Source 16">[16]</a></sup> AI can also save energy, as the weather example shows.<sup><a href="#s5" aria-label="Source 5">[5]</a></sup></li>
+        </ul>
+      </div>
+
+      <figure>
+        <img src="assets/data-centre-demand.svg" width="640" height="190" alt="Two bars. The starting level is 100. The 2030 projection is more than twice as long, labelled more than double.">
+        <figcaption>IEA projection as an index; starting level = 100.</figcaption>
+      </figure>
+
+      <div class="claim fact">
+        <p class="label fact">Fact</p>
+        <ul>
+          <li><strong>Grids.</strong> US grid operator PJM said its December 2025 auction fell 5.2% short of its 2027–28 needs. Proposals would make data centres pay for new supply or cut use when the grid is strained.<sup><a href="#s17" aria-label="Source 17">[17]</a></sup></li>
+          <li><strong>Dependence.</strong> A fault at web company Cloudflare on 5 December 2025 disrupted sites such as Canva. It was not an attack or described as AI-related.<sup><a href="#s18" aria-label="Source 18">[18]</a></sup></li>
+          <li><strong>Debate.</strong> Jacob Coxon resigned from Anthropic on 8 September 2026, warning that labs are racing toward self-improving AI that is not under control. An Anthropic safety lead publicly agreed; one commentator dismissed it.<sup><a href="#s19" aria-label="Source 19">[19]</a></sup></li>
+        </ul>
+      </div>
+
+      <div class="claim interp">
+        <p class="label interp">Interpretation</p>
+        <p>It's difficult to predict the future, and it's an area where many people disagree. The important thing to remember is that human being still have autonomy, and what the future holds decided by us, not AI.</p>
+      </div>
+
+      <div class="claim pred">
+        <p class="label pred">Prediction</p>
+        <p>AI may become a standard layer in software, some tasks may vanish, new roles appear, and criminals and defenders will both use it. Accountability will matter more than any single model.</p>
+      </div>
+
+      <a class="next" href="#sources">Next: Sources</a>
+    </section>
+
+    <section id="sources" aria-labelledby="sources-h">
+      <h2 id="sources-h">Sources</h2>
+      <ol class="sources">
+        <li id="s1"><a href="https://oecd.ai/en/inside-artificial-intelligence" rel="noopener">OECD.AI, How AI works</a></li>
+        <li id="s2"><a href="https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/" rel="noopener">Washington Post, websites that train chatbots</a></li>
+        <li id="s3"><a href="https://deepmind.google/blog/demis-hassabis-john-jumper-awarded-nobel-prize-in-chemistry/" rel="noopener">Google DeepMind, 2024 Nobel Prize in Chemistry</a></li>
+        <li id="s4"><a href="https://ascopost.com/news/august-2023/ai-supported-screen-reading-vs-standard-double-reading-in-mammography-screening-for-breast-cancer" rel="noopener">ASCO Post, AI mammography screening trial</a></li>
+        <li id="s5"><a href="https://www.ecmwf.int/node/29308" rel="noopener">ECMWF, AI forecasts become operational</a></li>
+        <li id="s6"><a href="https://nber.org/papers/w31161" rel="noopener">NBER, Generative AI at Work</a></li>
+        <li id="s7"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12179260/" rel="noopener">Scientific Reports, AI tutoring trial</a></li>
+        <li id="s8"><a href="https://www.reedsmith.com/our-insights/blogs/viewpoints/102ilzz/chatgpt-artificial-intelligence-tool-generates-fake-opinions/" rel="noopener">Reed Smith, Mata v. Avianca</a></li>
+        <li id="s9"><a href="https://proceedings.mlr.press/v81/buolamwini18a.html" rel="noopener">Buolamwini and Gebru, Gender Shades</a></li>
+        <li id="s10"><a href="https://technologyreview.com/2018/10/10/139858/amazon-ditched-ai-recruitment-software-because-it-was-biased-against-women" rel="noopener">MIT Technology Review, Amazon recruiting tool</a></li>
+        <li id="s11"><a href="https://www.scmp.com/news/hong-kong/law-and-crime/article/3250851/everyone-looked-real-multinational-firms-hong-kong-office-loses-hk200-million-after-scammers-stage" rel="noopener">South China Morning Post, deepfake video meeting fraud</a></li>
+        <li id="s12"><a href="https://huggingface.co/blog/agent-intrusion-technical-timeline" rel="noopener">Hugging Face, agent intrusion timeline</a></li>
+        <li id="s13"><a href="https://fortune.com/2026/07/21/openai-says-ai-models-escaped-control-hacked-hugging-face/" rel="noopener">Fortune, OpenAI models escaped test environment</a></li>
+        <li id="s14"><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-14" rel="noopener">European Commission, AI Act Article 14</a></li>
+        <li id="s15"><a href="https://www.nist.gov/itl/ai-risk-management-framework" rel="noopener">NIST, AI Risk Management Framework</a></li>
+        <li id="s16"><a href="https://www.publicpower.org/periodical/article/electricity-demand-data-centers-worldwide-set-more-double-2030-iea" rel="noopener">American Public Power Association, IEA report summary</a></li>
+        <li id="s17"><a href="https://www.jdsupra.com/legalnews/white-house-governors-and-pjm-respond-9000966/" rel="noopener">JD Supra, PJM capacity shortfall</a></li>
+        <li id="s18"><a href="https://www.khaleejtimes.com/tech/uae-cloudflare-outage-december-5-2025" rel="noopener">Khaleej Times, Cloudflare outage</a></li>
+        <li id="s19"><a href="https://time.com/article/2026/09/09/ai-anthropic-openai-jacob-coxon/" rel="noopener">TIME, Jacob Coxon resignation</a></li>
+      </ol>
+
+    </section>
+
+    <section id="made" aria-labelledby="made-h">
+      <h2 id="made-h">How this was made</h2>
+      <p>Drafted and vibecoded with Claude, thorough fact checking done by me. Some information changed and personalization done in Visual Studio Code. Goal: a clean and organized layout, unintimidating for new learners. Key identifiers for facts, interpretations, and predictions. Highlited interactive elements for illustrating pattern recignition.</p>
+      <p class="byline">By Sarah Yeebiyo</p>
+    </section>
+
+  </main>
+</body>
+</html>
