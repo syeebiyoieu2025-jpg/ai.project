@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 190" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif">
+  <title id="t">Projected data-centre electricity demand</title>
+  <desc id="d">Two bars. The starting level is 100. The 2030 projection is a bar more than twice as long, labelled more than double. A dashed section shows that it is more than double.</desc>
+  <rect width="640" height="190" fill="#fff"/>
+  <g font-size="15" fill="#0b1f5c">
+    <text x="10" y="28">Starting level = 100</text>
+    <text x="10" y="108">2030 projection: more than double</text>
+  </g>
+  <rect x="10" y="40" width="190" height="40" fill="#0b1f5c"/>
+  <rect x="10" y="120" width="380" height="40" fill="#0b1f5c"/>
+  <rect x="390" y="120" width="70" height="40" fill="#fff" stroke="#0b1f5c" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>
